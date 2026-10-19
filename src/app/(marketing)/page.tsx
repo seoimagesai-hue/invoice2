@@ -237,8 +237,7 @@ export default function HomePage() {
                 <p className="noise-feature__desc">
                   We do not display customer testimonials, star ratings, or
                   support phone numbers on this marketing site. Company details
-                  are verified via Companies House; policies are published for
-                  review before launch.
+                  are verified via Companies House.
                 </p>
                 <span className="noise-feature__link">
                   About SPECTBILL LTD

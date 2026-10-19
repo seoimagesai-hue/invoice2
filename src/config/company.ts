@@ -25,8 +25,6 @@ export const company = {
   /** Set SUPPORT_EMAIL in environment before launch */
   supportEmailEnvKey: "SUPPORT_EMAIL",
   jurisdiction: "England and Wales",
-  policyDraftNotice:
-    "These policies are draft legal content and should be reviewed by a qualified adviser before publication.",
 } as const;
 
 export function getSupportEmail(): string | null {
