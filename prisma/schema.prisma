@@ -1,0 +1,277 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String    @id @default(cuid())
+  email             String    @unique
+  passwordHash      String
+  name              String?
+  emailVerified     DateTime?
+  resetToken        String?
+  resetTokenExpires DateTime?
+  verifyToken       String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  businessProfile BusinessProfile?
+  clients         Client[]
+  invoices        Invoice[]
+  quotations      Quotation[]
+  payments        Payment[]
+  subscription    Subscription?
+  preferences     UserPreference?
+  contactMessages ContactMessage[]
+  auditEvents     AuditEvent[]
+  accounts        Account[]
+  sessions        Session[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model BusinessProfile {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  businessName      String
+  email             String?
+  phone             String?
+  addressLine1      String?
+  addressLine2      String?
+  city              String?
+  county            String?
+  postcode          String?
+  country           String?  @default("United Kingdom")
+  vatNumber         String?
+  companyNumber     String?
+  logoDataUrl       String?
+  currency          String   @default("GBP")
+  taxMode           String   @default("exclusive") // exclusive | inclusive | none
+  defaultTaxRate    Float    @default(0)
+  invoicePrefix     String   @default("INV-")
+  quotationPrefix   String   @default("QUO-")
+  nextInvoiceNumber Int      @default(1)
+  nextQuotationNumber Int    @default(1)
+  paymentTerms      String?
+  bankDetails       String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Client {
+  id           String   @id @default(cuid())
+  userId       String
+  name         String
+  companyName  String?
+  email        String?
+  phone        String?
+  addressLine1 String?
+  addressLine2 String?
+  city         String?
+  county       String?
+  postcode     String?
+  country      String?
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  invoices     Invoice[]
+  quotations   Quotation[]
+
+  @@index([userId])
+  @@index([userId, name])
+}
+
+model Invoice {
+  id              String   @id @default(cuid())
+  userId          String
+  clientId        String
+  quotationId     String?  @unique
+  number          String
+  status          String   @default("DRAFT") // DRAFT SENT PARTIALLY_PAID PAID OVERDUE CANCELLED
+  issueDate       DateTime
+  dueDate         DateTime
+  currency        String   @default("GBP")
+  taxMode         String   @default("exclusive")
+  subtotalCents   Int      @default(0)
+  discountCents   Int      @default(0)
+  taxCents        Int      @default(0)
+  totalCents      Int      @default(0)
+  amountPaidCents Int      @default(0)
+  notes           String?
+  paymentTerms    String?
+  shareToken      String?  @unique
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  client          Client   @relation(fields: [clientId], references: [id], onDelete: Restrict)
+  quotation       Quotation? @relation(fields: [quotationId], references: [id])
+  items           InvoiceItem[]
+  payments        Payment[]
+
+  @@unique([userId, number])
+  @@index([userId, status])
+  @@index([userId, issueDate])
+}
+
+model InvoiceItem {
+  id          String  @id @default(cuid())
+  invoiceId   String
+  description String
+  quantity    Float
+  unitPriceCents Int
+  discountPercent Float @default(0)
+  taxRate     Float   @default(0)
+  sortOrder   Int     @default(0)
+  invoice     Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@index([invoiceId])
+}
+
+model Quotation {
+  id            String   @id @default(cuid())
+  userId        String
+  clientId      String
+  number        String
+  status        String   @default("DRAFT") // DRAFT SENT ACCEPTED REJECTED EXPIRED CONVERTED
+  issueDate     DateTime
+  validUntil    DateTime
+  currency      String   @default("GBP")
+  taxMode       String   @default("exclusive")
+  subtotalCents Int      @default(0)
+  discountCents Int      @default(0)
+  taxCents      Int      @default(0)
+  totalCents    Int      @default(0)
+  notes         String?
+  terms         String?
+  shareToken    String?  @unique
+  convertedAt   DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  client        Client   @relation(fields: [clientId], references: [id], onDelete: Restrict)
+  items         QuotationItem[]
+  invoice       Invoice?
+
+  @@unique([userId, number])
+  @@index([userId, status])
+  @@index([userId, issueDate])
+}
+
+model QuotationItem {
+  id              String    @id @default(cuid())
+  quotationId     String
+  description     String
+  quantity        Float
+  unitPriceCents  Int
+  discountPercent Float     @default(0)
+  taxRate         Float     @default(0)
+  sortOrder       Int       @default(0)
+  quotation       Quotation @relation(fields: [quotationId], references: [id], onDelete: Cascade)
+
+  @@index([quotationId])
+}
+
+model Payment {
+  id            String   @id @default(cuid())
+  userId        String
+  invoiceId     String
+  amountCents   Int
+  paidAt        DateTime
+  method        String?
+  reference     String?
+  notes         String?
+  createdAt     DateTime @default(now())
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  invoice       Invoice  @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([invoiceId])
+}
+
+model Subscription {
+  id                   String    @id @default(cuid())
+  userId               String    @unique
+  planId               String    @default("free")
+  status               String    @default("inactive") // inactive active past_due cancelled trialing
+  billingInterval      String?   // month | year
+  stripeCustomerId     String?
+  stripeSubscriptionId String?   @unique
+  stripePriceId        String?
+  currentPeriodEnd     DateTime?
+  cancelAtPeriodEnd    Boolean   @default(false)
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserPreference {
+  id                 String  @id @default(cuid())
+  userId             String  @unique
+  cookieAnalytics    Boolean @default(false)
+  cookieMarketing    Boolean @default(false)
+  cookieConsentAt    DateTime?
+  user               User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  userId    String?
+  name      String
+  email     String
+  subject   String
+  message   String
+  status    String   @default("new")
+  createdAt DateTime @default(now())
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model AuditEvent {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  entity    String?
+  entityId  String?
+  meta      String?
+  createdAt DateTime @default(now())
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([userId, createdAt])
+}
