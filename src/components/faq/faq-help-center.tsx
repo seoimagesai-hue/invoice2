@@ -102,7 +102,7 @@ export function FaqHelpCenter({ categories }: FaqHelpCenterProps) {
           </Link>
           <Link href="/about" className="faq-help__aside-link">
             <Smile className="h-4 w-4 shrink-0" aria-hidden />
-            About SpectBill
+            About DevWiser
           </Link>
         </aside>
       </div>

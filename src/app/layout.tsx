@@ -16,12 +16,12 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   title: {
-    default: "SpectBill | Professional Invoice & Quotation Generator",
-    template: "%s | SpectBill",
+    default: "DevWiser | Professional Invoice & Quotation Generator",
+    template: "%s | DevWiser",
   },
   description:
-    "Create, customise, download, and share professional invoices and quotations with SpectBill by SPECTBILL LTD.",
-  metadataBase: new URL("https://spectbillltd.store"),
+    "Create, customise, download, and share professional invoices and quotations with DevWiser by LOCAL SEO WISER LTD.",
+  metadataBase: new URL("https://devwiser.uk"),
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },

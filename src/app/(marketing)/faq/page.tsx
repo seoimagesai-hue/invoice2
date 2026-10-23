@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/faq",
   "FAQ",
-  "Answers about SpectBill plans, billing, product features, support, and SPECTBILL LTD company information."
+  "Answers about DevWiser plans, billing, product features, support, and LOCAL SEO WISER LTD company information."
 );
 
 export default function FaqPage() {

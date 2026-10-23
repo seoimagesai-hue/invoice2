@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/legal/privacy",
   "Privacy Policy",
-  "Privacy Policy for SpectBill — UK GDPR information for data processed by SPECTBILL LTD."
+  "Privacy Policy for DevWiser — UK GDPR information for data processed by LOCAL SEO WISER LTD."
 );
 
 export default function PrivacyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
       <p>
         {company.legalName} (&quot;we&quot;, company number{" "}
         {company.companyNumber}) is the controller for personal data processed
-        through SpectBill at {company.domain}, unless stated otherwise. Registered
+        through DevWiser at {company.domain}, unless stated otherwise. Registered
         office: {company.registeredOffice.full}.
       </p>
 

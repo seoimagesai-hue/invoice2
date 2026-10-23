@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/",
   "Professional Invoicing Software",
-  "Create professional invoices and quotations in minutes. SpectBill helps UK freelancers and small businesses manage clients, PDFs, and payments."
+  "Create professional invoices and quotations in minutes. DevWiser helps UK freelancers and small businesses manage clients, PDFs, and payments."
 );
 
 const featureCards = [
@@ -78,7 +78,7 @@ const benefits = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero — centered layout (SpectBill copy); pattern background */}
+      {/* Hero — centered layout (DevWiser copy); pattern background */}
       <section className="hero-pattern fade-in relative overflow-hidden">
         <div className="relative mx-auto max-w-4xl px-4 pb-10 pt-16 text-center sm:px-6 sm:pb-12 sm:pt-20 lg:pt-24">
           <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-[var(--brand)] sm:text-5xl lg:text-[3.25rem]">
@@ -93,7 +93,7 @@ export default function HomePage() {
           </div>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[var(--muted-foreground)] sm:text-lg">
             Create, customise, download, and share professional business
-            documents with SpectBill. Manage your clients, track payments, and
+            documents with DevWiser. Manage your clients, track payments, and
             keep your billing organised in one place.
           </p>
           <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-white/80 px-4 py-1.5 text-sm font-medium text-[var(--brand)] shadow-sm backdrop-blur-sm">
@@ -102,7 +102,7 @@ export default function HomePage() {
           </p>
         </div>
 
-        {/* Device mockups — SpectBill dashboard on desktop + mobile */}
+        {/* Device mockups — DevWiser dashboard on desktop + mobile */}
         <div className="relative mx-auto max-w-6xl px-4 pb-6 sm:px-6 sm:pb-8">
           <DashboardPreview />
         </div>
@@ -240,7 +240,7 @@ export default function HomePage() {
                   are verified via Companies House.
                 </p>
                 <span className="noise-feature__link">
-                  About SPECTBILL LTD
+                  About LOCAL SEO WISER LTD
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </span>
               </div>

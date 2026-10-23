@@ -15,7 +15,7 @@ import {
   Wallet,
   X,
 } from "lucide-react";
-import { SpectBillLogo } from "@/components/brand/logo";
+import { DevWiserLogo } from "@/components/brand/logo";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -73,7 +73,7 @@ export function DashboardSidebar({
     <>
       <aside className="hidden w-64 shrink-0 flex-col bg-[var(--brand)] md:flex">
         <div className="border-b border-white/10 px-5 py-5">
-          <SpectBillLogo href="/dashboard" className="dash-sidebar-logo" />
+          <DevWiserLogo href="/dashboard" className="dash-sidebar-logo" />
         </div>
         <NavLinks />
       </aside>
@@ -88,7 +88,7 @@ export function DashboardSidebar({
           />
           <aside className="relative flex h-full w-72 max-w-[85vw] flex-col bg-[var(--brand)] shadow-xl">
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-4">
-              <SpectBillLogo href="/dashboard" className="dash-sidebar-logo" size="sm" />
+              <DevWiserLogo href="/dashboard" className="dash-sidebar-logo" size="sm" />
               <button
                 type="button"
                 className="rounded-lg p-2 text-white hover:bg-white/10"

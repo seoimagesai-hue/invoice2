@@ -27,7 +27,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/features",
   "Features",
-  "SpectBill features for invoices, quotations, clients, PDFs, payment tracking, branding, and secure account access."
+  "DevWiser features for invoices, quotations, clients, PDFs, payment tracking, branding, and secure account access."
 );
 
 const gridFeatures = [
@@ -204,7 +204,7 @@ export default function FeaturesPage() {
             <span className="text-[var(--accent)]">and payment tracking</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[var(--muted-foreground)] sm:text-lg">
-            SpectBill features cover professional invoices, quotations and
+            DevWiser features cover professional invoices, quotations and
             estimates, reusable client records, PDF downloads, and payment
             tracking — within clear plan limits.
           </p>
@@ -373,7 +373,7 @@ export default function FeaturesPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              Your SpectBill dashboard
+              Your DevWiser dashboard
             </h2>
             <p className="mt-3 text-slate-300">
               Overview stats, recent invoices, and quotations in one place —
@@ -391,9 +391,9 @@ export default function FeaturesPage() {
       {/* Honest trust strip (no fake logos) */}
       <section className="border-b border-[var(--border)] bg-white py-10">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-4 text-center text-sm font-medium text-[var(--muted-foreground)] sm:px-6">
-          <span>UK company · SPECTBILL LTD</span>
+          <span>UK company · LOCAL SEO WISER LTD</span>
           <span className="hidden text-[var(--border)] sm:inline">|</span>
-          <span>Company No. 16395245</span>
+          <span>Company No. 17267839</span>
           <span className="hidden text-[var(--border)] sm:inline">|</span>
           <span>Plan limits published on Pricing</span>
           <span className="hidden text-[var(--border)] sm:inline">|</span>
@@ -449,7 +449,7 @@ export default function FeaturesPage() {
               Frequently asked questions
             </h2>
             <p className="mt-3 text-[var(--muted-foreground)]">
-              Quick answers about SpectBill features, plans, and data.
+              Quick answers about DevWiser features, plans, and data.
             </p>
             <Link
               href="/faq"
@@ -473,7 +473,7 @@ export default function FeaturesPage() {
       <section className="border-t border-[var(--border)] bg-[var(--brand)] py-16 text-white sm:py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h2 className="font-display text-3xl font-semibold">
-            Start with SpectBill today
+            Start with DevWiser today
           </h2>
           <p className="mt-4 text-slate-200">
             Create a free account, add your first client, and generate an invoice

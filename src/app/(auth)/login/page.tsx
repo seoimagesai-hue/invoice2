@@ -47,7 +47,7 @@ function LoginForm() {
   return (
     <AuthShell
       title="Sign in"
-      subtitle="Access your SpectBill dashboard"
+      subtitle="Access your DevWiser dashboard"
       footer={
         <>
           No account?{" "}

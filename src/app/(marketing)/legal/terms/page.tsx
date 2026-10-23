@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/legal/terms",
   "Terms of Service",
-  "Terms of Service for SpectBill software provided by SPECTBILL LTD (Company No. 16395245)."
+  "Terms of Service for DevWiser software provided by LOCAL SEO WISER LTD (Company No. 17267839)."
 );
 
 export default function TermsPage() {
@@ -14,7 +14,7 @@ export default function TermsPage() {
     <LegalDocument title="Terms of Service" lastUpdated="17 October 2025">
       <p>
         These Terms of Service (&quot;Terms&quot;) govern access to and use of the
-        SpectBill web application and related services (the &quot;Service&quot;)
+        DevWiser web application and related services (the &quot;Service&quot;)
         operated by {company.legalName} (&quot;we&quot;, &quot;us&quot;), company
         number {company.companyNumber}, with registered office at{" "}
         {company.registeredOffice.full}.
@@ -33,7 +33,7 @@ export default function TermsPage() {
 
       <h2>2. The Service</h2>
       <p>
-        SpectBill provides tools to create and manage invoices, quotations,
+        DevWiser provides tools to create and manage invoices, quotations,
         clients, PDF exports, and payment records within plan limits described on
         our Pricing page. Features may change as we develop the product; material
         reductions to paid features will be communicated where reasonably

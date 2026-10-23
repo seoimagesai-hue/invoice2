@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react";
-import { SpectBillLogo } from "@/components/brand/logo";
+import { DevWiserLogo } from "@/components/brand/logo";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -21,7 +21,7 @@ const links = [
 const announcements = [
   { text: "Create professional invoices and quotations in minutes", href: "/register" },
   { text: "Proposed launch plans from £9/month — view pricing", href: "/pricing" },
-  { text: "SPECTBILL LTD · Company No. 16395245", href: "/about" },
+  { text: "LOCAL SEO WISER LTD · Company No. 17267839", href: "/about" },
 ];
 
 export function SiteHeader() {
@@ -76,7 +76,7 @@ export function SiteHeader() {
       <div className="border-b border-[var(--border)] bg-white/95 backdrop-blur">
         <div className="relative mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <div className="relative z-10 shrink-0">
-            <SpectBillLogo size="sm" />
+            <DevWiserLogo size="sm" />
           </div>
 
           <nav

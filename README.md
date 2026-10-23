@@ -1,10 +1,10 @@
-# SpectBill Ltd — Invoice & Quotation Generator
+# DevWiser Ltd — Invoice & Quotation Generator
 
 Production-oriented SaaS for creating, managing, downloading, and sharing professional invoices and quotations.
 
-**Domain:** https://spectbillltd.store  
-**Company:** SPECTBILL LTD (Company No. [16395245](https://find-and-update.company-information.service.gov.uk/company/16395245))  
-**Registered office:** 39 Mill Lane, Portbury, Bristol, England, BS20 7TX
+**Domain:** https://devwiser.uk  
+**Company:** LOCAL SEO WISER LTD (Company No. [17267839](https://find-and-update.company-information.service.gov.uk/company/17267839))  
+**Registered office:** Office 1267 85 Dunstall Hill, Wolverhampton, United Kingdom, WV6 0SR
 
 > This application is **not** claimed as deployed. Complete hosting, DNS, Stripe, and email configuration before launch.
 
@@ -69,7 +69,7 @@ See `.env.example`. Critical variables:
 |----------|---------|
 | `DATABASE_URL` | Prisma connection (`file:./dev.db` for SQLite) |
 | `AUTH_SECRET` | NextAuth secret |
-| `NEXT_PUBLIC_APP_URL` | App URL (use `https://spectbillltd.store` in production) |
+| `NEXT_PUBLIC_APP_URL` | App URL (use `https://devwiser.uk` in production) |
 | `SUPPORT_EMAIL` | Public support contact (required before launch) |
 | `STRIPE_*` | Live subscription billing |
 | `SMTP_*` | Outbound email for contact form / password reset |
@@ -88,7 +88,7 @@ Without SMTP, contact messages are stored in the database and the UI reports tha
 ## Production notes
 
 1. Use PostgreSQL: change `provider` in `prisma/schema.prisma` and set `DATABASE_URL`.
-2. Set `NEXT_PUBLIC_APP_URL=https://spectbillltd.store` and matching `AUTH_URL`.
+2. Set `NEXT_PUBLIC_APP_URL=https://devwiser.uk` and matching `AUTH_URL`.
 3. Configure Stripe webhooks and SMTP.
 4. Set `SUPPORT_EMAIL` to a monitored address.
 5. Have legal counsel review draft policies under `/legal/*`.

@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/pricing",
   "Pricing",
-  "SpectBill pricing: Starter, Professional, and Business plans with monthly or annual GBP billing, cancellation details, and published plan limits."
+  "DevWiser pricing: Starter, Professional, and Business plans with monthly or annual GBP billing, cancellation details, and published plan limits."
 );
 
 const comparisonRows = [
@@ -125,7 +125,7 @@ export default function PricingPage() {
               Plan comparison
             </h2>
             <p className="mt-3 text-[var(--muted-foreground)]">
-              Feature and limit differences across SpectBill plans.
+              Feature and limit differences across DevWiser plans.
             </p>
           </div>
 
@@ -182,7 +182,7 @@ export default function PricingPage() {
               Billing, renewal, and cancellation
             </h2>
             <p className="mt-3 text-[var(--muted-foreground)]">
-              Clear rules for how SpectBill subscriptions work.
+              Clear rules for how DevWiser subscriptions work.
             </p>
           </div>
 
@@ -256,7 +256,7 @@ export default function PricingPage() {
                     aria-hidden
                   />
                   <span>
-                    Card payments for SpectBill subscriptions are processed by
+                    Card payments for DevWiser subscriptions are processed by
                     Stripe when credentials are configured — we never store raw
                     card details.
                   </span>

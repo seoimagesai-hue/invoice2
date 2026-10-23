@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SpectBillLogo } from "@/components/brand/logo";
+import { DevWiserLogo } from "@/components/brand/logo";
 import { company, getSupportEmail } from "@/config/company";
 
 const productLinks = [
@@ -39,7 +39,7 @@ export function SiteFooter() {
       <div className="relative z-10 mx-auto max-w-6xl px-4 pb-28 pt-14 sm:px-6 sm:pb-32 sm:pt-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="sm:col-span-2 lg:col-span-1">
-            <SpectBillLogo href="/" size="sm" />
+            <DevWiserLogo href="/" size="sm" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-[var(--muted-foreground)]">
               Professional invoice and quotation software for freelancers,
               contractors, and small businesses.
@@ -163,7 +163,7 @@ export function SiteFooter() {
             <circle cx="29" cy="27" r="5" fill="#3b82f6" />
           </svg>
           <span className="font-display text-[clamp(3.5rem,14vw,9rem)] font-bold leading-none tracking-tight text-[var(--brand)]">
-            SpectBill
+            DevWiser
           </span>
         </div>
       </div>

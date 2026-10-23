@@ -14,7 +14,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/how-it-works",
   "How It Works",
-  "Create a SpectBill account, add a client, create an invoice or quotation, then download or share the PDF."
+  "Create a DevWiser account, add a client, create an invoice or quotation, then download or share the PDF."
 );
 
 const steps: {
@@ -120,7 +120,7 @@ export default function HowItWorksPage() {
       <section className="hero-pattern border-b border-[var(--border)]">
         <div className="mx-auto max-w-3xl px-4 pb-12 pt-16 text-center sm:px-6 sm:pt-20 lg:pt-24">
           <h1 className="font-display text-4xl font-semibold leading-[1.12] tracking-tight text-[var(--brand)] sm:text-5xl">
-            How SpectBill{" "}
+            How DevWiser{" "}
             <span className="text-[var(--accent)]">works</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[var(--muted-foreground)] sm:text-lg">

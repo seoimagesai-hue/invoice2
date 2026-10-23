@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { Download } from "lucide-react";
-import { SpectBillLogo } from "@/components/brand/logo";
+import { DevWiserLogo } from "@/components/brand/logo";
 import { StatusBadge } from "@/components/dashboard/status-badge";
 import { Button } from "@/components/ui/button";
 import { formatDisplayDate } from "@/lib/client-api";
@@ -71,7 +71,7 @@ export default function PublicSharePage() {
     <div className="min-h-screen bg-[var(--surface-muted)]">
       <header className="border-b border-[var(--border)] bg-white px-4 py-4">
         <div className="mx-auto flex max-w-2xl items-center justify-between gap-4">
-          <SpectBillLogo href="/" size="sm" />
+          <DevWiserLogo href="/" size="sm" />
           <Link href="/login" className="text-sm text-[var(--accent)] hover:underline">
             Sign in
           </Link>

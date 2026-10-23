@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/legal/refunds",
   "Refund & Cancellation",
-  "Refund and cancellation information for SpectBill subscriptions from SPECTBILL LTD."
+  "Refund and cancellation information for DevWiser subscriptions from LOCAL SEO WISER LTD."
 );
 
 export default function RefundsPage() {
@@ -14,7 +14,7 @@ export default function RefundsPage() {
     <LegalDocument title="Refund & Cancellation Policy" lastUpdated="17 October 2025">
       <p>
         This policy describes how cancellations and refunds work for paid
-        subscriptions to SpectBill provided by {company.legalName} (Company No.{" "}
+        subscriptions to DevWiser provided by {company.legalName} (Company No.{" "}
         {company.companyNumber}). It should be read with our{" "}
         <Link href="/legal/terms" className="text-[var(--accent)] underline">
           Terms of Service

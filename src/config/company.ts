@@ -1,27 +1,27 @@
 /**
  * Verified company identity from UK Companies House
- * https://find-and-update.company-information.service.gov.uk/company/16395245
+ * https://find-and-update.company-information.service.gov.uk/company/17267839
  */
 export const company = {
-  legalName: "SPECTBILL LTD",
-  tradingName: "SpectBill",
-  companyNumber: "16395245",
+  legalName: "LOCAL SEO WISER LTD",
+  tradingName: "DevWiser",
+  companyNumber: "17267839",
   companyType: "Private limited Company",
-  /** As shown on Companies House at time of build; verify before publication */
   companyStatus: "Active",
-  incorporatedOn: "17 April 2025",
-  natureOfBusiness: "62012 - Business and domestic software development",
+  incorporatedOn: "8 June 2026",
+  natureOfBusiness:
+    "62012 - Business and domestic software development; 73110 - Advertising agencies",
   companiesHouseUrl:
-    "https://find-and-update.company-information.service.gov.uk/company/16395245",
+    "https://find-and-update.company-information.service.gov.uk/company/17267839",
   registeredOffice: {
-    line1: "39 Mill Lane",
-    line2: "Portbury",
-    city: "Bristol",
-    country: "England",
-    postcode: "BS20 7TX",
-    full: "39 Mill Lane, Portbury, Bristol, England, BS20 7TX",
+    line1: "Office 1267 85 Dunstall Hill",
+    line2: "",
+    city: "Wolverhampton",
+    country: "United Kingdom",
+    postcode: "WV6 0SR",
+    full: "Office 1267 85 Dunstall Hill, Wolverhampton, United Kingdom, WV6 0SR",
   },
-  domain: "https://spectbillltd.store",
+  domain: "https://devwiser.uk",
   /** Set SUPPORT_EMAIL in environment before launch */
   supportEmailEnvKey: "SUPPORT_EMAIL",
   jurisdiction: "England and Wales",

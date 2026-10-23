@@ -104,7 +104,7 @@ input[type="button"]:not(:disabled) {
   background-size: auto, 22px 22px;
 }
 
-/* —— Feature cards: Uiverse-style noise / displacement (SpectBill colours) —— */
+/* —— Feature cards: Uiverse-style noise / displacement (brand colours) —— */
 .noise-feature {
   position: relative;
   display: block;
@@ -956,7 +956,7 @@ input[type="button"]:not(:disabled) {
   }
 }
 
-/* —— How it works: dark panel grid (SpectBill navy scheme) —— */
+/* —— How it works: dark panel grid (navy scheme) —— */
 .hiw-panel {
   overflow: hidden;
   border-radius: 1rem;

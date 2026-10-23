@@ -20,7 +20,7 @@ export function AuthShell({
             href="/"
             className="inline-block text-xl font-display font-semibold text-[var(--brand)]"
           >
-            SpectBill
+            DevWiser
           </Link>
           <h1 className="mt-6 text-2xl font-display font-semibold text-[var(--foreground)]">
             {title}

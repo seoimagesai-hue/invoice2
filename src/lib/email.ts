@@ -52,7 +52,7 @@ export async function sendContactNotification(payload: {
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
       to,
       replyTo: payload.email,
-      subject: `[SpectBill Contact] ${payload.subject}`,
+      subject: `[DevWiser Contact] ${payload.subject}`,
       text: `From: ${payload.name} <${payload.email}>\n\n${payload.message}`,
     });
 
@@ -99,7 +99,7 @@ export async function sendPasswordResetEmail(payload: {
     await transporter.sendMail({
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
       to: payload.email,
-      subject: "Reset your SpectBill password",
+      subject: "Reset your DevWiser password",
       text: `Use this link to reset your password (valid for 1 hour):\n\n${payload.resetUrl}\n\nIf you did not request this, you can ignore this email.`,
     });
 

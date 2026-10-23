@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-const STORAGE_KEY = "spectbill_cookie_consent";
+const STORAGE_KEY = "devwiser_cookie_consent";
 
 type Consent = {
   essential: true;

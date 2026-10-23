@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export function SpectBillLogo({
+export function DevWiserLogo({
   className,
   href = "/",
   size = "md",
@@ -24,7 +24,7 @@ export function SpectBillLogo({
         sizes.text,
         className
       )}
-      aria-label="SpectBill home"
+      aria-label="DevWiser home"
     >
       <svg
         width={sizes.icon}
@@ -49,7 +49,7 @@ export function SpectBillLogo({
         />
       </svg>
       <span>
-        Spect<span className="text-[var(--accent)]">Bill</span>
+        Dev<span className="text-[var(--accent)]">Wiser</span>
       </span>
     </Link>
   );

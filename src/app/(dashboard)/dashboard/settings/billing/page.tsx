@@ -91,7 +91,7 @@ function BillingSettingsContent() {
     <div>
       <PageHeader
         title="Subscription & billing"
-        description="Manage your SpectBill plan"
+        description="Manage your DevWiser plan"
       />
 
       {checkoutNotice === "success" ? (

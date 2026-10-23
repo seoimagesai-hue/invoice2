@@ -20,7 +20,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
         <header className="sticky top-0 z-30 flex h-14 items-center justify-between gap-4 border-b border-[var(--border)] bg-white px-4 sm:px-6">
           <MobileMenuButton onOpen={() => setMobileOpen(true)} />
           <p className="hidden text-sm font-medium text-[var(--muted-foreground)] sm:block">
-            SpectBill dashboard
+            DevWiser dashboard
           </p>
           <div className="ml-auto">
             <LogoutButton />

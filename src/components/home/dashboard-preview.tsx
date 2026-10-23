@@ -193,7 +193,7 @@ function DashboardScreen({ compact = false }: { compact?: boolean }) {
   );
 }
 
-/** Desktop laptop + mobile phone mockup of the SpectBill dashboard UI */
+/** Desktop laptop + mobile phone mockup of the DevWiser dashboard UI */
 export function DashboardPreview() {
   return (
     <div className="relative mx-auto w-full max-w-5xl">

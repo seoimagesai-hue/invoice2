@@ -15,7 +15,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/contact",
   "Contact",
-  "Contact SPECTBILL LTD about SpectBill invoicing software. Registered office in Bristol; support email from site configuration."
+  "Contact LOCAL SEO WISER LTD about DevWiser invoicing software. Registered office in Wolverhampton; support email from site configuration."
 );
 
 export default function ContactPage() {
@@ -31,7 +31,7 @@ export default function ContactPage() {
             <span className="text-[var(--accent)]">{company.tradingName}</span>
           </h1>
           <p className="contact-page__hero-text mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[var(--muted-foreground)] sm:text-lg">
-            Send us a message about SpectBill, your account, or billing. We
+            Send us a message about DevWiser, your account, or billing. We
             respond by email when support is available.
           </p>
         </div>
@@ -69,8 +69,12 @@ export default function ContactPage() {
                 {company.legalName}
                 <br />
                 {company.registeredOffice.line1}
-                <br />
-                {company.registeredOffice.line2}
+                {company.registeredOffice.line2 ? (
+                  <>
+                    <br />
+                    {company.registeredOffice.line2}
+                  </>
+                ) : null}
                 <br />
                 {company.registeredOffice.city}
                 <br />

@@ -45,7 +45,7 @@ export default function RegisterPage() {
   return (
     <AuthShell
       title="Create account"
-      subtitle="Start invoicing with SpectBill"
+      subtitle="Start invoicing with DevWiser"
       footer={
         <>
           Already registered?{" "}

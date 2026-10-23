@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 export function absoluteUrl(path = ""): string {
   const base =
     process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ||
-    "https://spectbillltd.store";
+    "https://devwiser.uk";
   if (!path) return base;
   return `${base}${path.startsWith("/") ? path : `/${path}`}`;
 }

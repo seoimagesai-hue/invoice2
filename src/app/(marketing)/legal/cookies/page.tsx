@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/legal/cookies",
   "Cookie Policy",
-  "How SpectBill uses cookies and similar technologies, including consent choices."
+  "How DevWiser uses cookies and similar technologies, including consent choices."
 );
 
 export default function CookiesPage() {
@@ -14,7 +14,7 @@ export default function CookiesPage() {
     <LegalDocument title="Cookie Policy" lastUpdated="17 October 2025">
       <p>
         This Cookie Policy explains how {company.legalName} uses cookies and
-        similar technologies on {company.domain} and the SpectBill application.
+        similar technologies on {company.domain} and the DevWiser application.
       </p>
 
       <h2>1. What are cookies?</h2>

@@ -7,9 +7,9 @@ export const faqCategories: FaqCategory[] = [
     title: "Getting started",
     items: [
       {
-        question: "What is SpectBill?",
+        question: "What is DevWiser?",
         answer:
-          "SpectBill is online software from SPECTBILL LTD for creating invoices and quotations, managing clients, downloading PDFs, and tracking payments within your plan limits.",
+          "DevWiser is online software from LOCAL SEO WISER LTD for creating invoices and quotations, managing clients, downloading PDFs, and tracking payments within your plan limits.",
       },
       {
         question: "Do I need a paid plan to try it?",
@@ -17,7 +17,7 @@ export const faqCategories: FaqCategory[] = [
           "New accounts receive a free trial allowance (5 clients, 5 invoices, and 5 quotations per month) until a paid subscription is active. See Pricing for plan limits.",
       },
       {
-        question: "Who is SpectBill for?",
+        question: "Who is DevWiser for?",
         answer:
           "Freelancers, contractors, and small businesses in the UK who want a straightforward way to produce professional invoices and quotations without complex accounting software.",
       },
@@ -30,7 +30,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "What subscription plans are available?",
         answer:
-          "SpectBill offers Starter, Professional, and Business plans, billed monthly or annually in GBP. Proposed launch prices and document limits are published on the Pricing page.",
+          "DevWiser offers Starter, Professional, and Business plans, billed monthly or annually in GBP. Proposed launch prices and document limits are published on the Pricing page.",
       },
       {
         question: "How does billing frequency work?",
@@ -53,9 +53,9 @@ export const faqCategories: FaqCategory[] = [
           "Refund eligibility depends on billing frequency, timing, and applicable UK consumer rights. Duplicate or erroneous charges can be reviewed on request. Full rules are in the Refund & Cancellation Policy.",
       },
       {
-        question: "Does SpectBill process my customers’ invoice payments?",
+        question: "Does DevWiser process my customers’ invoice payments?",
         answer:
-          "No. SpectBill helps you create documents and record payments you receive. It does not collect card payments from your clients on your behalf unless a separate payment product is configured later.",
+          "No. DevWiser helps you create documents and record payments you receive. It does not collect card payments from your clients on your behalf unless a separate payment product is configured later.",
       },
     ],
   },
@@ -66,7 +66,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Can I create quotations as well as invoices?",
         answer:
-          "Yes. SpectBill supports both invoices and quotations, including PDF download and status tracking.",
+          "Yes. DevWiser supports both invoices and quotations, including PDF download and status tracking.",
       },
       {
         question: "Can I convert a quotation into an invoice?",
@@ -97,7 +97,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Can other users access my invoices?",
         answer:
-          "No. Dashboard data is scoped to your account. Other SpectBill users cannot view your clients, invoices, or quotations. Share links use private tokens when you choose to share a document.",
+          "No. Dashboard data is scoped to your account. Other DevWiser users cannot view your clients, invoices, or quotations. Share links use private tokens when you choose to share a document.",
       },
       {
         question: "How can I delete my account?",
@@ -121,9 +121,9 @@ export const faqCategories: FaqCategory[] = [
           "Use the Contact page form or the support email address shown in the site footer when SUPPORT_EMAIL is configured for your environment.",
       },
       {
-        question: "Where is SPECTBILL LTD registered?",
+        question: "Where is LOCAL SEO WISER LTD registered?",
         answer:
-          "SPECTBILL LTD (Company No. 16395245) is incorporated in England and Wales. Our registered office is 39 Mill Lane, Portbury, Bristol, England, BS20 7TX. You can verify our record on Companies House.",
+          "LOCAL SEO WISER LTD (Company No. 17267839) is incorporated in England and Wales. Our registered office is Office 1267 85 Dunstall Hill, Wolverhampton, United Kingdom, WV6 0SR. You can verify our record on Companies House.",
       },
     ],
   },

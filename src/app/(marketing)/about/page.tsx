@@ -14,7 +14,7 @@ import { pageMetadata } from "@/lib/site-metadata";
 export const metadata = pageMetadata(
   "/about",
   "About Us",
-  "About SPECTBILL LTD — UK software company (Company No. 16395245) providing SpectBill invoice and quotation software."
+  "About LOCAL SEO WISER LTD — UK software company (Company No. 17267839) providing DevWiser invoice and quotation software."
 );
 
 const facts = [
