@@ -193,7 +193,7 @@ export default function PricingPage() {
             aria-hidden="true"
             focusable="false"
           >
-            <filter id="spectbill-noise">
+            <filter id="devwiser-noise">
               <feTurbulence
                 type="turbulence"
                 baseFrequency="0.9"

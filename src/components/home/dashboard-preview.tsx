@@ -86,7 +86,7 @@ function DashboardScreen({ compact = false }: { compact?: boolean }) {
         <aside className="flex w-[132px] shrink-0 flex-col bg-[var(--brand)]">
           <div className="border-b border-white/10 px-3 py-3">
             <p className="text-[11px] font-semibold tracking-tight text-white">
-              Spect<span className="text-blue-300">Bill</span>
+              Dev<span className="text-blue-300">Wiser</span>
             </p>
           </div>
           <nav className="flex flex-1 flex-col gap-0.5 overflow-hidden px-1.5 py-2">
